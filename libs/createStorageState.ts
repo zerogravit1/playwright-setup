@@ -2,6 +2,9 @@ import { chromium } from "@playwright/test";
 import fs from 'fs/promises';
 import path from 'path';
 
+import { authStrategyMap } from "./authStrategies";
+import { envRoleUsers } from "./envRoleUsers";
+
 export async function createStorageState(
   env: string,
   baseURL: string,
